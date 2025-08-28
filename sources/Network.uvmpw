@@ -8,17 +8,8 @@
   <WorkspaceName>WorkSpace</WorkspaceName>
 
   <project>
-    <PathAndName>.\Device\Device.uvprojx</PathAndName>
-  </project>
-
-  <project>
     <PathAndName>.\GTC-3\GTC-3.uvprojx</PathAndName>
     <NodeIsActive>1</NodeIsActive>
-    <NodeIsExpanded>1</NodeIsExpanded>
-  </project>
-
-  <project>
-    <PathAndName>.\TwoSensors\TwoSensors.uvprojx</PathAndName>
   </project>
 
 </ProjectWorkspace>
