@@ -15,13 +15,13 @@ cd ../..
 rmdir generated\GUI /s /q
 cd scripts/vs_win
 @echo on
-cmake ../../VS/CMakeLists.txt -B../../generated/GUI  -G "Visual Studio 17 2022" -A Win32 -DCMAKE_BUILD_TYPE=Release -DBUILD_USE_STATIC_RUNTIME=ON
+cmake ../../VS/CMakeLists.txt -B../../generated/GUI  -G "Visual Studio 18 2026" -A Win32 -DCMAKE_BUILD_TYPE=Release -DBUILD_USE_STATIC_RUNTIME=ON
 @echo off
 
 :BUILDING
 if %isBuild%==0 goto EXIT
 @echo on
-MSBuild.exe ../../generated/GUI/RES-Network-GUI.sln -clp:ErrorsOnly;WarningsOnly -nologo /m
+MSBuild.exe ../../generated/GUI/RES-Network-GUI.slnx -clp:ErrorsOnly;WarningsOnly -nologo /m
 @echo off
 goto EXIT
 
